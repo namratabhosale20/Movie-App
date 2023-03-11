@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Open sans", sans-serif;
+}
+
+img {
+    width: 30%;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+
+/* start here */
+body {
+    background: #22254b;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+}
+
+header {
+
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    background: #373b69;
+    padding: 2rem;
+    color: #fff;
+    text-align: center;
+    min-height: 100%;
+    padding-bottom: 100%;
+
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header input {
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    margin: 2rem 0;
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 3px;
+}
+
+.movies-container {
+    padding: 2rem;
+
+
+}
+
+.movies-container>p {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.movies {
+    width: 100%;
+    display: flex;
+
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.movies{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.movie {
+    /* display: flex; */
+    background: #fff;
+    padding: 1rem;
+    /* width: 40rem; */
+    width: 40rem;
+
+    border-radius: 5px;
+    margin: 0 2rem 2rem 0;
+}
+
+
+
+.movie:hover {
+    cursor: pointer;
+}
+
+.movie img {
+    /* width: 35%; */
+    width: 100%;
+
+}
+
+.details {
+    padding: 0 1rem;
+}
+
+.details h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    padding-bottom: 5px;
+    border-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+
+}
+
+.details p.rate {
+    font-weight: 600;
+
+}
+
+@media screen and (max-width:600px) {
+    .main {
+        flex-direction: column;
+    }
+
+    header {
+        padding: 2rem;
+    }
+
+    .movie {
+        padding: 5px;
+        width: 32rem;
+        margin: 5px 0;
+    }
+    .movies{
+        grid-template-columns: 1fr;
+    }
+    
+}
